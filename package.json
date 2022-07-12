@@ -4,7 +4,7 @@
   "description": "Backend Node + Express + TypeSript + Swagger",
   "main": "index.js",
   "scripts": {
-    "start:local": "node index.js",
+    "start:local": "npx nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -27,5 +27,8 @@
   "dependencies": {
     "dotenv": "^16.0.1",
     "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
   }
 }

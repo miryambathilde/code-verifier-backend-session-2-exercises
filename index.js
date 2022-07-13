@@ -20,7 +20,7 @@ Here we create the routes of our application
 // GET /
 app.get('/', (req, res) => {
 	// Send Hello World to the client - response body
-	res.send('Welcome to APP Express + TS + Swagger + Mongoose');
+	res.send('Welcome to my API Restfull: Express + TS + Swagger + Mongoose');
 });
 
 // Execute APP and Listen Request to port

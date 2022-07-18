@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import express, { Request, Response } from 'express'
-import { HelloController } from '@/controller/HelloController'
-import { logInfo } from '@/utils/logger'
+import { HelloController } from '../controller/HelloController'
+import { logInfo } from '../utils/logger'
 
 // Router from express
 const HelloRouter = express.Router()

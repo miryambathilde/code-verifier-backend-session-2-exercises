@@ -5,7 +5,7 @@
 
 import express, { Request, Response } from 'express'
 import HelloRouter from './HelloRouter'
-import { logInfo } from '@/utils/logger'
+import { logInfo } from '../utils/logger'
 
 // Server instance
 const server = express()
@@ -17,7 +17,7 @@ const rootRouter = express.Router()
 
 // GET: http://localhost:8000/api/
 rootRouter.get('/', (req: Request, res: Response) => {
-  logInfo('GET: http://localhost:8000/api/')
+  logInfo('GET: http://127.0.0.1:8000/api/')
   // Send Hello World to the client - response body
   res.send('Welcome to my API Restfull: Express + TS + Nodemon + Jest +  Swagger + Mongoose')
 })

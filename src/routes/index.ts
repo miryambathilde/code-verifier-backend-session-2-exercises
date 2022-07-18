@@ -6,6 +6,7 @@
 import express, { Request, Response } from 'express'
 import HelloRouter from './HelloRouter'
 import { logInfo } from '../utils/logger'
+import GoodbyeRouter from './GoodbyeRouter'
 
 // Server instance
 const server = express()
@@ -27,6 +28,8 @@ rootRouter.get('/', (req: Request, res: Response) => {
 server.use('/', rootRouter)
 // GET: http://localhost:8000/api/hello --> HelloRouter
 server.use('/hello', HelloRouter)
+// GET: http://localhost:8000/api/goodbye --> GoodbyeRouter
+server.use('/goodbye', GoodbyeRouter)
 
 // Add more routers to the app
 
